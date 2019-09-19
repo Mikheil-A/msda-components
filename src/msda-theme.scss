@@ -1,5 +1,7 @@
 @import '~@angular/material/theming';
 
+@import "color-properties.scss";
+
 @include mat-core();
 
 @font-face {
@@ -7,45 +9,12 @@
   src: url(../src/assets/fonts/bpg_dejavu_sans.ttf);
 }
 
-$msda-test-color: (
-  50: #e8f5e9,
-  100: #c8e6c9,
-  200: #344396,
-  300: #b177ec,
-  400: #d4b716,
-  500: #FFB7BA, // .mat-checkbox-background background-color
-  600: purple,
-  700: blue,
-  800: red,
-  900: orange,
-  A100: #b9f6ca,
-  A200: #69f0ae,
-  A400: #750a7f,
-  A700: #060527,
-  contrast: (
-    50: $dark-primary-text,
-    100: $dark-primary-text,
-    200: $dark-primary-text,
-    300: $dark-primary-text,
-    400: $dark-primary-text,
-    500: $dark-primary-text,
-    600: $light-primary-text,
-    700: $light-primary-text,
-    800: $light-primary-text,
-    900: $light-primary-text,
-    A100: $dark-primary-text,
-    A200: $dark-primary-text,
-    A400: $dark-primary-text,
-    A700: $dark-primary-text,
-  )
-);
-
 //$my-test-color-primary: mat-palette($mat-green);
-$my-test-color-primary: mat-palette($msda-test-color);
+$my-test-color-primary: mat-palette($msda-primary-color);
 //$my-test-color-accent: mat-palette($mat-green);
-$my-test-color-accent: mat-palette($msda-test-color);
+$my-test-color-accent: mat-palette($msda-accent-color);
 //$my-test-color-warn: mat-palette($mat-green);
-$my-test-color-warn: mat-palette($msda-test-color);
+$my-test-color-warn: mat-palette($msda-warn-color);
 //$my-test-color: mat-palette(red);
 
 $my-test-theme: mat-light-theme($my-test-color-primary, $my-test-color-accent, $my-test-color-warn);

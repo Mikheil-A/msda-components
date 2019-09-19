@@ -30,3 +30,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 -->
 
 *What we wanted and why it didn't work (extend/inheritance).
+*Get rid of ::ng-deep and create your own custom theme
+*Custom themes for specific mat components

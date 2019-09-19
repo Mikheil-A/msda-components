@@ -14,10 +14,12 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatSliderModule} from '@angular/material/slider';
-import { MsdaTestComponent2Component } from './msda-test-component2/msda-test-component2.component';
-import { MsdaBadgeComponent } from './msda-badge/msda-badge.component';
+import {MsdaTestComponent2Component} from './msda-test-component2/msda-test-component2.component';
+import {MsdaBadgeComponent} from './msda-badge/msda-badge.component';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatIconModule} from '@angular/material/icon';
+import {MsdaChipListComponent} from './msda-chip-list/msda-chip-list.component';
+import {MatChipsModule} from '@angular/material/chips';
 
 
 
@@ -26,7 +28,8 @@ import {MatIconModule} from '@angular/material/icon';
     AppComponent,
     MsdaTestComponentComponent,
     MsdaTestComponent2Component,
-    MsdaBadgeComponent
+    MsdaBadgeComponent,
+    MsdaChipListComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +47,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatCheckboxModule,
     MatSliderModule,
     MatBadgeModule,
-    MatIconModule
+    MatIconModule,
+    MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
