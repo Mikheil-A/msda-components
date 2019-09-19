@@ -1,0 +1,21 @@
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container > * {
+  width: 100%;
+}
+
+mat-slider {
+  width: 300px;
+}
+
+p {
+  background-color: red;
+}
+
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background {
+  background-color: green;
+}

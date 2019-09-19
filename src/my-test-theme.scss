@@ -1,0 +1,71 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+@font-face {
+  font-family: BPG-DejaVu-Sans;
+  src: url(../src/assets/fonts/bpg_dejavu_sans.ttf);
+}
+
+$msda-test-color: (
+  50: #e8f5e9,
+  100: #c8e6c9,
+  200: #344396,
+  300: #b177ec,
+  400: #d4b716,
+  500: #FFB7BA, // .mat-checkbox-background background-color
+  600: purple,
+  700: blue,
+  800: red,
+  900: orange,
+  A100: #b9f6ca,
+  A200: #69f0ae,
+  A400: #750a7f,
+  A700: #060527,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $dark-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $dark-primary-text,
+    A700: $dark-primary-text,
+  )
+);
+
+//$my-test-color-primary: mat-palette($mat-green);
+$my-test-color-primary: mat-palette($msda-test-color);
+//$my-test-color-accent: mat-palette($mat-green);
+$my-test-color-accent: mat-palette($msda-test-color);
+//$my-test-color-warn: mat-palette($mat-green);
+$my-test-color-warn: mat-palette($msda-test-color);
+//$my-test-color: mat-palette(red);
+
+$my-test-theme: mat-light-theme($my-test-color-primary, $my-test-color-accent, $my-test-color-warn);
+
+@include angular-material-theme($my-test-theme);
+
+//$my-test-custom-typography: mat-typography-config(
+//  $font-family: 'BPG-DejaVu-Sans',
+//  $headline: mat-typography-level(320px, 480px, 700),
+//  $body-1: mat-typography-level(160px, 240px, 500),
+//  $button: mat-typography-level(140px, 140px, 500)
+//);
+
+$my-test-custom-typography: mat-typography-config(
+  $font-family: 'BPG-DejaVu-Sans',
+  $headline: mat-typography-level(32px, 48px, 700),
+  $body-1: mat-typography-level(16px, 24px, 500),
+  $button: mat-typography-level(14px, 14px, 500)
+);
+
+@include mat-base-typography($my-test-custom-typography);
+@include mat-checkbox-typography($my-test-custom-typography);
+@include mat-button-typography($my-test-custom-typography);
