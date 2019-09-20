@@ -9,7 +9,6 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
   encapsulation: ViewEncapsulation.Emulated
 })
 export class MsdaTestComponentComponent implements OnInit {
-  isDarkTheme: boolean = false;
 
   foods = [
     {value: 'steak-0', viewValue: 'Steak'},

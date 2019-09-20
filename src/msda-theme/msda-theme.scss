@@ -2,6 +2,7 @@
 
 @import "msda-default-theme";
 @import "msda-dark-theme";
+//@import "msda-light-theme";
 
 @import "msda-typography";
 
@@ -9,7 +10,7 @@
 @include mat-core();
 
 
-@include angular-material-theme($msda-custom-theme);
+@include angular-material-theme($msda-default-theme);
 
 .msda-dark-theme {
   @include angular-material-theme($msda-dark-theme);
@@ -20,7 +21,7 @@
  * Typography configuration
  */
 @include angular-material-typography($msda-typography);
-//@include mat-button-typography($msda-typography);
+//@include mat-button-typography($msda-typography2);
 //@include mat-base-typography($msda-typography);
 //@include mat-checkbox-typography($msda-typography);
 //@include mat-chips-typography($msda-typography);

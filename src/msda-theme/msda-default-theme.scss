@@ -6,4 +6,4 @@ $msda-color-primary: mat-palette($msda-primary-color);
 $msda-color-accent: mat-palette($msda-accent-color);
 $msda-color-warn: mat-palette($msda-warn-color);
 
-$msda-custom-theme: mat-light-theme($msda-color-primary, $msda-color-accent, $msda-color-warn);
+$msda-default-theme: mat-light-theme($msda-color-primary, $msda-color-accent, $msda-color-warn);

@@ -1,25 +1,21 @@
-<div [class.msda-dark-theme]="isDarkTheme">
+<button mat-button
+        color="primary">
+  Click me!
+</button>
+
+<mat-slide-toggle>Slide me!</mat-slide-toggle>
+<mat-checkbox>Check me!</mat-checkbox>
 
 
-  <button mat-button
-          color="primary">
-    Click me!
-  </button>
-
-  <mat-slide-toggle (toggleChange)="isDarkTheme = !isDarkTheme">Slide me!</mat-slide-toggle>
-  <mat-checkbox>Check me!</mat-checkbox>
-
-
-  <h4>Basic mat-select</h4>
-  <mat-form-field>
-    <mat-label>Favorite food</mat-label>
-    <mat-select>
-      <mat-option *ngFor="let food of foods" [value]="food.value">
-        {{food.viewValue}}
-      </mat-option>
-    </mat-select>
-  </mat-form-field>
+<h4>Basic mat-select</h4>
+<mat-form-field>
+  <mat-label>Favorite food</mat-label>
+  <mat-select>
+    <mat-option *ngFor="let food of foods" [value]="food.value">
+      {{food.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
 
 
-  <mat-slider></mat-slider>
-</div>
+<mat-slider></mat-slider>
