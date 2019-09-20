@@ -1,4 +1,4 @@
-import {Component, ElementRef, OnInit, ViewChild, ViewEncapsulation} from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 
 
 
@@ -6,11 +6,10 @@ import {Component, ElementRef, OnInit, ViewChild, ViewEncapsulation} from '@angu
   selector: 'app-msda-test-component',
   templateUrl: './msda-test-component.component.html',
   styleUrls: ['./msda-test-component.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.Emulated
 })
 export class MsdaTestComponentComponent implements OnInit {
-
-  // @ViewChild('myTestButton') myTestButton: ElementRef;
+  isDarkTheme: boolean = false;
 
   foods = [
     {value: 'steak-0', viewValue: 'Steak'},
@@ -23,6 +22,5 @@ export class MsdaTestComponentComponent implements OnInit {
   }
 
   ngOnInit() {
-    // console.log(this.myTestButton);
   }
 }
