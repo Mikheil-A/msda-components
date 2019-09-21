@@ -25,3 +25,7 @@
 //@include mat-base-typography($msda-typography);
 //@include mat-checkbox-typography($msda-typography);
 //@include mat-chips-typography($msda-typography);
+
+.msda-typegraphy-2 {
+  @include angular-material-typography($msda-typography2);
+}

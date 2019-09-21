@@ -29,7 +29,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 -->
 
+
 *What we wanted and why it didn't work (extend/inheritance).
 *Get rid of ::ng-deep and create your own custom theme
 *Custom themes for specific mat components
-*Angular ViewEncapsulation instead of :ng-deep (best practice of overriding angular material components)
+*Angular ViewEncapsulation (Emulated vs None) instead of :ng-deep (best practice of overriding angular material components)
+*"Overlay-based components have a panelClass property"
