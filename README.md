@@ -35,3 +35,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 *Custom themes for specific mat components
 *Angular ViewEncapsulation (Emulated vs None) instead of :ng-deep (best practice of overriding angular material components)
 *"Overlay-based components have a panelClass property"
+*SVGs vs Icon fonts debate in 2019
