@@ -4,6 +4,8 @@ import {NgModule} from '@angular/core';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {MsdaTestComponentComponent} from './msda-test-component/msda-test-component.component';
+import {MyDialogComponent} from './my-dialog/my-dialog.component';
+
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -20,6 +22,7 @@ import {MatBadgeModule} from '@angular/material/badge';
 import {MatIconModule} from '@angular/material/icon';
 import {MsdaChipListComponent} from './msda-chip-list/msda-chip-list.component';
 import {MatChipsModule} from '@angular/material/chips';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 
@@ -29,7 +32,11 @@ import {MatChipsModule} from '@angular/material/chips';
     MsdaTestComponentComponent,
     MsdaTestComponent2Component,
     MsdaBadgeComponent,
-    MsdaChipListComponent
+    MsdaChipListComponent,
+    MyDialogComponent
+  ],
+  entryComponents: [
+    MyDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +55,8 @@ import {MatChipsModule} from '@angular/material/chips';
     MatSliderModule,
     MatBadgeModule,
     MatIconModule,
-    MatChipsModule
+    MatChipsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -18,6 +18,15 @@
 
 
 /**
+ * 'panelClass' for styling overlay components
+ */
+.my-test-no-padding-dialog .mat-dialog-container {
+  background-color: red;
+  padding: 0;
+}
+
+
+/**
  * Typography configuration
  */
 @include angular-material-typography($msda-typography);

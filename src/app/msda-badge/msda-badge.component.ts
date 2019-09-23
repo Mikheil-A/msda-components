@@ -1,4 +1,6 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {MatDialog} from '@angular/material';
+import {MyDialogComponent} from '../my-dialog/my-dialog.component';
 
 
 
@@ -10,9 +12,17 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 })
 export class MsdaBadgeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _matDialog: MatDialog) {
+  }
 
   ngOnInit() {
   }
 
+  openMyDialog() {
+    this._matDialog.open(
+      MyDialogComponent, {
+        panelClass: 'my-test-no-padding-dialog' // string[]
+      }
+    );
+  }
 }
